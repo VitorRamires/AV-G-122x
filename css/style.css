@@ -2,7 +2,6 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 body{
@@ -24,6 +23,7 @@ img{
   font-family: "inter-light";
   src: url(/font/Inter-Light.ttf);
 }
+
 @font-face {
   font-family: "inter-black";
   src: url(/font/Inter-Black.ttf);
@@ -170,7 +170,7 @@ img{
   background-color: #242424;
   color: #ffffff;
   font-family: "inter-light";
-  z-index: 500;
+  z-index: 450;
 }
 
 
@@ -217,19 +217,35 @@ img{
   margin-top:60px;
 }
 
+.modelos{
+  position: relative;
+}
+
 .modelo-box{
+  position: relative;
   display: grid;
   grid-template-columns: 1fr 0.7fr;
-  gap: 30px;
+  gap: 60px;
   color:#ffffff;
   margin-top:160px;
+  z-index: 400;
+  font-family: "inter-light";
+}
+
+.modelos-decoration{
+  position: absolute;
+  top:0;
+  left:0;
+  width: 120px;
+  height: 330px;
+  background-color: #0193B9;
+  border-radius: 20px 0 20px 0;
 }
 
 .modelo-nav{
   overflow-x: hidden;
-  height: 300px;
+  height: 330px;
 }
-
 
 .title-modelos{
   text-align: center;
@@ -271,15 +287,78 @@ img{
 
 /* width */
 ::-webkit-scrollbar {
-  width: 15px;
+    width: 15px;
   }
   
   /* Track */
   ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+    background: #ffffff10;
+    border-radius: 5px;
   }
   
   /* Handle */
   ::-webkit-scrollbar-thumb {
-  background: #004E63;
+    background: #ffffff;
+    border-radius: 5px;
+  }
+
+
+  .localização-contato{
+    margin-top:230px;
+    font-family: "inter-light";
+  }
+
+  .localização-contato-body{
+    display: grid;
+    grid-template-columns: 1fr 0.55fr;
+    align-items: center;
+    margin-top: 80px;
+  }
+
+  .mapa img{
+    border-radius: 10px;
+  }
+
+  .info-adicional{
+    background-color: #002933;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 45px;
+    padding: 40px;
+  }
+
+  .info-adicional ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .info-adicional li{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .info-adicional li::before{
+    content: "";
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    background-color: #0193B9;
+  }
+
+  .contato, .lojas{
+    font-size:1rem;
+  }
+
+  .contato-title, .lojas-title{
+    margin-bottom:20px;
   }
