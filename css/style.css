@@ -31,7 +31,7 @@ img{
 
 .center{
   width: 1100px;
-  max-width: 90%;
+  max-width: 95%;
   margin:0 auto;
 }
 
@@ -96,15 +96,21 @@ img{
 }
 
 
+.banner-decoration{
+  position: absolute;
+  bottom:0;
+  transform: translateY(50%);
+  width: 100%;
+  height: 150px;
+  background-color: #0190B8;
+}
 
 .banner-text{
-  width: 1600px;
-  max-width: 90%;
   position: relative;
   margin:0 auto;
-  color:#ffffff;
+  color:#00b4e6;
   padding:90px 90px 160px 90px;
-  background-color: #004152;
+  background-color: #252525;
   border-radius:0 20px 0 20px;
 }
 
@@ -112,14 +118,13 @@ img{
   font-size: 2.5rem;
   margin-bottom:65px;
   font-family: "nico";
-  color:#DDEBEF;
 }
 
 .banner-text p{
   font-size: 1.2rem;
   line-height: 1.9rem;
-  color:#C0CFD2;
   font-family: "inter-light";
+  color:#ABABAB;
 }
 
 .navTab{
@@ -138,7 +143,7 @@ img{
   position: relative;
   width: 10%;
   height: 20px;
-  background-color: #0193B9;
+  background-color: #b8b8b8;
   border-radius: 20px 0 20px 0;
 }
 
@@ -197,12 +202,12 @@ img{
 
 
 .dec-right{
-  right:-3%;
+  right:-2%;
   top:20%;
 }
 
 .dec-left{
-  left:-3%;
+  left:-2%;
   bottom:-7%;
 }
 
@@ -436,7 +441,7 @@ img{
     font-size: 0.7rem;
   }
 
-  @media screen and (max-width:720px) {
+  @media screen and (max-width:730px) {
     .menu{
       position: fixed;
       top:0;
@@ -463,13 +468,11 @@ img{
       height: 255px;
     }
     .banner-text {
-      width: 100%;
-      max-width: unset;
       padding: 90px 30px 160px 30px;
       margin-top:30px;
     }
     .banner-text h2{
-      font-size: 1.8rem;
+      font-size: 1.6rem;
     }
     .banner-text p{
       font-size: 1rem;
@@ -508,6 +511,13 @@ img{
   @media screen and (max-width:960px) {
     .localização-contato-body{
       grid-template-columns: 1fr;
+    }
+    .menu{
+      width: 100%;
+    }
+
+    .mapa img{
+      height: 750px;
     }
   }
   
