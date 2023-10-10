@@ -90,6 +90,9 @@ img{
   max-width: 100%;
   margin:0 auto;
   z-index: 600;
+  background-image: url(/img/carro1-removebg.png);
+  background-position: center;
+  background-size: cover;
 }
 
 
@@ -373,11 +376,12 @@ img{
     font-size:1.1rem;
     font-family: "inter-light";
     margin-top:60px;
+    gap: 20px;
   }
 
   .FAQ-decoration{
     position: relative;
-    width: 75px;
+    width: 100%;
     height: 15px;
     background-color: #0193B9;
     margin-top:5px;
@@ -456,15 +460,16 @@ img{
 
   @media screen and (max-width:650px) {
     .banner-img{
-      height: auto;
+      height: 255px;
     }
     .banner-text {
       width: 100%;
       max-width: unset;
       padding: 90px 30px 160px 30px;
+      margin-top:30px;
     }
     .banner-text h2{
-      font-size: 2rem;
+      font-size: 1.8rem;
     }
     .banner-text p{
       font-size: 1rem;
@@ -483,7 +488,7 @@ img{
       left:50%;
       transform: translateX(-50%);
     }
-    .espec-right{
+    .dec-right{
       display: none;
     }
   }
@@ -500,3 +505,24 @@ img{
     }
   }
   
+  @media screen and (max-width:960px) {
+    .localização-contato-body{
+      grid-template-columns: 1fr;
+    }
+  }
+  
+@media screen and (max-width:375px) {
+  .localização-contato .section-title h2{
+    font-size:2rem;
+  }
+}
+
+@media screen and (max-width:410px) {
+  .modelo-nav{
+    height: 220px;
+  }
+
+  .modelos-decoration{
+    height: 250px;
+  }
+}
