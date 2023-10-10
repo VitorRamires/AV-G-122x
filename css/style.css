@@ -49,11 +49,11 @@ img{
 .menu{
   position: absolute;
   top:0;
-  left:2%;
-  width: 1100px;
-  max-width: 100%;
+  left:0;
   padding:30px;
   z-index: 9999;
+  background-color: rgb(37, 37, 37);
+  border-radius: 0 0 20px 0;
 }
 
 .menu nav{
@@ -86,12 +86,12 @@ img{
 .banner-img{
   position: relative;
   height: 950px;
-  width: 100%;
-  background-image: url("/img/carro1-removebg.png");
-  background-size:cover;
-  background-position: center;
+  width: 1000px;
+  max-width: 100%;
+  margin:0 auto;
   z-index: 600;
 }
+
 
 
 .banner-text{
@@ -133,15 +133,14 @@ img{
 
 .tab{
   position: relative;
-  width: 200px;
-  max-width: 100%;
+  width: 10%;
   height: 20px;
   background-color: #0193B9;
   border-radius: 20px 0 20px 0;
 }
 
 .tab:first-child{
-  width: 400px;
+  width: 30%;
   background-color: #FFFFFF;
 }
 
@@ -151,6 +150,7 @@ img{
 }
 
 .especs-box{
+  position: relative;
   width: 100%;
   display: flex;
   align-items: center;
@@ -364,7 +364,7 @@ img{
   }
 
   .FAQ{
-    margin-top: 120px;
+    margin-top: 160px;
   }
 
   .FAQ-body{
@@ -431,3 +431,72 @@ img{
     color: #a5a5a5;
     font-size: 0.7rem;
   }
+
+  @media screen and (max-width:720px) {
+    .menu{
+      position: fixed;
+      top:0;
+      left:0;
+      display: none;
+    }
+
+    .menu nav ul{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  @media screen and (max-width:1079px) {
+    .banner-img{
+      height: 550px;
+    }
+  }
+
+  @media screen and (max-width:650px) {
+    .banner-img{
+      height: auto;
+    }
+    .banner-text {
+      width: 100%;
+      max-width: unset;
+      padding: 90px 30px 160px 30px;
+    }
+    .banner-text h2{
+      font-size: 2rem;
+    }
+    .banner-text p{
+      font-size: 1rem;
+    }
+    .especs-box{
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .espec-body{
+      width: 100%;
+    }
+    .espec-decoration{
+      width: 70%;
+      right:unset;
+      left:50%;
+      transform: translateX(-50%);
+    }
+    .espec-right{
+      display: none;
+    }
+  }
+
+  @media screen and (max-width:850px) {
+    .modelo-box{
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media screen and (max-width:500px){
+    .numeros{
+      grid-template-columns: 1fr;
+    }
+  }
+  
