@@ -1,0 +1,84 @@
+.modelos{
+  position: relative;
+  margin-top:220px;
+}
+
+.modelo-box{
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 0.7fr;
+  gap: 60px;
+  color:#ffffff;
+  z-index: 400;
+  font-family: "inter-light";
+}
+
+.modelos-decoration{
+  position: absolute;
+  top:0;
+  left:0;
+  width: 120px;
+  height: 330px;
+  background-color: #0193B9;
+  border-radius: 20px 0 20px 0;
+}
+
+.modelo-nav{
+  overflow-x: hidden;
+  height: 330px;
+}
+
+.title-modelos{
+  text-align: center;
+  background-color: #004E63;
+  padding:10px 0;
+}
+
+.beneficio-modelos{
+  font-size: 1.4rem;
+  margin-top: 30px;
+}
+
+.beneficio-modelos ul{
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+
+
+.beneficio-modelos li{
+  margin:10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.beneficio-modelos li::before{
+  content: "";
+  position: relative;
+  width: 50px;
+  height: 15px;
+  background-color: #0193B9;
+  border-radius: 10px 0 10px 0;
+}
+
+@media screen and (max-width:410px) {
+  .modelo-nav{
+    height: 220px;
+  }
+
+  .modelos-decoration{
+    height: 250px;
+  }
+}
+
+
+@media screen and (max-width:850px) {
+  .modelo-box{
+    grid-template-columns: 1fr;
+  }
+}
+

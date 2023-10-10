@@ -1,0 +1,75 @@
+
+
+.localização-contato{
+  margin-top:230px;
+  font-family: "inter-light";
+}
+
+.localização-contato-body{
+  display: grid;
+  grid-template-columns: 1fr 0.55fr;
+  align-items: center;
+  margin-top: 80px;
+}
+
+.mapa img{
+  border-radius: 20px 0 20px 0;
+}
+
+.info-adicional{
+  background-color: #002933;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 45px;
+  padding: 40px;
+}
+
+.info-adicional ul{
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 15px;
+}
+
+.info-adicional li{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.info-adicional li::before{
+  content: "";
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  background-color: #0193B9;
+}
+
+.contato, .lojas{
+  font-size:1rem;
+}
+
+.contato-title, .lojas-title{
+  margin-bottom:20px;
+}
+
+
+@media screen and (max-width:375px) {
+  .localização-contato .section-title h2{
+    font-size:2rem;
+  }
+}
+
+@media screen and (max-width:960px) {
+  .localização-contato-body{
+    grid-template-columns: 1fr;
+  }
+}
+

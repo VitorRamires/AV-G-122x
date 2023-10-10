@@ -1,0 +1,46 @@
+
+
+.FAQ{
+  margin-top: 160px;
+}
+
+.FAQ-body{
+  display: grid;
+  grid-template-columns: 0.1fr 1fr;
+  font-size:1.1rem;
+  font-family: "inter-light";
+  margin-top:60px;
+  gap: 20px;
+}
+
+.FAQ-decoration{
+  position: relative;
+  width: 100%;
+  height: 15px;
+  background-color: #0193B9;
+  margin-top:5px;
+  border-radius: 0 5px 0 5px;
+}
+
+.FAQ-box{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  color:#ffffff;
+}
+
+.FAQ-box h3{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:10px;
+}
+
+.FAQ-box .resposta{
+  margin-top:25px;
+  font-size:1rem;
+  color:#dfdfdf;
+  line-height: 1.3rem;
+  display: none;
+}
