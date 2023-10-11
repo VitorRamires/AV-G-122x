@@ -49,6 +49,10 @@
   color:#ABABAB;
 }
 
+.texto{
+  display: none;
+}
+
 .navTab{
   position: absolute;
   bottom:0;
@@ -63,16 +67,12 @@
 
 .tab{
   position: relative;
-  width: 10%;
   height: 20px;
-  background-color: #b8b8b8;
   border-radius: 20px 0 20px 0;
+  cursor: pointer;
 }
 
-.tab:first-child{
-  width: 30%;
-  background-color: #FFFFFF;
-}
+
 
 @media screen and (max-width:1079px) {
   .banner-img{

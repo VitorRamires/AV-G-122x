@@ -1,0 +1,64 @@
+.menu li a::after{
+  content: "";
+  position: absolute;
+  bottom:-40%;
+  left:0;
+  width: 0;
+  height: 5px;
+  background-color: #00b4e6;
+  transition: 0.15s;
+  border-radius: 5px 0 5px 0;
+}
+
+.menu li a:hover::after{
+  width: 70%;
+  transition: 0.15s;
+}
+
+.banner-img{
+  animation: anima-car 0.7s ease-in-out;
+}
+
+.active-tab{
+  width: 30% !important;
+  background-color: #FFFFFF !important;
+  transition: 0.3s;
+}
+
+.desactive-tab{
+  width: 10%;
+  transition: 0.3s;
+  background-color: #b8b8b8;
+}
+
+.active-texto{
+  display: block !important;
+  animation: anima-LeftToRight 0.3s ease-in-out;
+}
+
+.tab:hover{
+  transform: scale(1.05);
+}
+
+@keyframes anima-car{
+  from{
+    transform: translate(20%, -10%);
+    opacity: 0;
+  }
+  to{
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes anima-LeftToRight{
+  from{
+    opacity: 0;
+    transform: translateX(-5%);
+  }
+
+  to{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
