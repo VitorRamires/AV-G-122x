@@ -21,5 +21,46 @@ tabs.forEach((tab, index)=>{
   })
 })
 
-/* srcoll */
+/* scroll */
+  const links = document.querySelectorAll('a')
 
+  function handleScroll(event){
+    event.preventDefault()
+    const currentLink = event.target.getAttribute('id')
+    const actualSection = document.querySelector(`.${currentLink}`)
+    window.scrollTo({
+      behavior: 'smooth',
+      top: actualSection.getBoundingClientRect().top
+    })
+  }
+
+  links.forEach(link=>{
+    link.addEventListener('click', handleScroll)
+  })
+
+
+  /* mapa */
+
+  const mapa = document.querySelector('.mapa')
+  const textoCriado = document.createElement('p')
+
+  function handleTooltipHover(){
+    textoCriado.classList.add('textoMapa')
+    textoCriado.innerText = 'Mouse aqui'
+    mapa.appendChild(textoCriado)
+  }
+
+  function handleTooltipLeave(){
+    textoCriado.remove()
+  }
+
+  function handleTooltipMove(event){
+    textoCriado.style.top = event.offsetY + 20 + 'px'
+    textoCriado.style.left = event.offsetX + 20 + 'px'
+    textoCriado.style.opacity = 1
+    console.log(event)
+  }
+
+  mapa.addEventListener('mousemove', handleTooltipMove)
+  mapa.addEventListener('mouseover', handleTooltipHover)
+  mapa.addEventListener('mouseleave', handleTooltipLeave)
