@@ -20,6 +20,8 @@
   background-color: #0193B9;
   margin-top:5px;
   border-radius: 0 5px 0 5px;
+  transition: 0.3s;
+  cursor: pointer;
 }
 
 .FAQ-box{
@@ -28,6 +30,7 @@
   align-items: start;
   justify-content: start;
   color:#ffffff;
+  cursor: pointer;
 }
 
 .FAQ-box h3{

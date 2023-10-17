@@ -31,13 +31,33 @@
   background-color: #b8b8b8;
 }
 
-.active-texto{
+.active-texto, .active-beneficios{
   display: block !important;
   animation: anima-LeftToRight 0.3s ease-in-out;
 }
 
+.anime-height{
+    height: 100% !important;
+    transition: 0.5s;
+}
+
+.active-accordion{
+  display: block !important;
+  animation: anima-TopToBottom 0.3s ease-in-out;
+}
+
+
 .tab:hover{
   transform: scale(1.05);
+}
+
+.scrollAnime{
+  opacity: 0;
+}
+
+.scrollAnime.scrollOn{
+  opacity: 1;
+  animation: anima-LeftToRight 0.3s ease-out;
 }
 
 @keyframes anima-car{
@@ -62,3 +82,34 @@
     transform: translateX(0);
   }
 }
+@keyframes anima-TopToBottom{
+  from{
+    opacity: 0;
+    display: none;
+    transform: translateY(-5%);
+  }
+
+  to{
+    opacity: 1;
+    display: block;
+    transform: translateY(0);
+  }
+}
+
+
+
+@keyframes anima-TopToBottom{
+  from{
+    opacity: 0;
+    display: none;
+    transform: translateY(-5%);
+  }
+
+  to{
+    opacity: 1;
+    display: block;
+    transform: translateY(0);
+  }
+}
+
+

@@ -1,88 +1,23 @@
-/* tabs */
+import scrollAnime from "./modules/scrollAnim.js"
+import accordionList from './modules/FAQ.js'
+import animNumbers from "./modules/animNumbers.js"
+import tooltipMapHandler from "./modules/tooltipMap.js"
+import smoothScroll from "./modules/smoothScroll.js"
+import navTab from "./modules/tabs.js"
 
-const tabs = document.querySelectorAll(".tab")
-const textos = document.querySelectorAll('.texto')
-
-function handleActiveTabs(index){
-  tabs.forEach(tab=>{
-    tab.classList.remove('active-tab')
-    tab.classList.add('desactive-tab')
-  })
-  textos.forEach(texto=>{
-    texto.classList.remove('active-texto')
-  })
-  tabs[index].classList.add('active-tab')
-  textos[index].classList.add('active-texto')
-}
-
-tabs.forEach((tab, index)=>{
-  tab.addEventListener("click", ()=>{
-    handleActiveTabs(index)
-  })
-})
-
-/* scroll */
-  const links = document.querySelectorAll('a')
-
-  function handleScroll(event){
-    event.preventDefault()
-    const currentLink = event.target.getAttribute('id')
-    const actualSection = document.querySelector(`.${currentLink}`)
-    window.scrollTo({
-      behavior: 'smooth',
-      top: actualSection.getBoundingClientRect().top
-    })
-  }
-
-  links.forEach(link=>{
-    link.addEventListener('click', handleScroll)
-  })
+scrollAnime()
+accordionList()
+animNumbers()
+tooltipMapHandler()
+smoothScroll()
+navTab()
 
 
-  /* mapa */
 
-  const mapa = document.querySelector('.mapa')
-  const textoCriado = document.createElement('p')
 
-  function handleTooltipHover(){
-    textoCriado.classList.add('textoMapa')
-    textoCriado.innerText = 'Mouse aqui'
-    mapa.appendChild(textoCriado)
-  }
 
-  function handleTooltipLeave(){
-    textoCriado.remove()
-  }
 
-  function handleTooltipMove(event){
-    textoCriado.style.top = event.offsetY + 20 + 'px'
-    textoCriado.style.left = event.offsetX + 20 + 'px'
-    textoCriado.style.opacity = 1
-    console.log(event)
-  }
 
-  mapa.addEventListener('mousemove', handleTooltipMove)
-  mapa.addEventListener('mouseover', handleTooltipHover)
-  mapa.addEventListener('mouseleave', handleTooltipLeave)
 
-  /* numeros */
 
-  const numeros = Array.from(document.querySelectorAll("spam"))
-  
-  numeros.forEach(num=>{
-    const numbers = Number.parseFloat(num.innerText)
-    const numbersInterval = setInterval(handleNumber, 10)
-    let timer = 0
-    let incremento = Math.floor(numbers / 90)
-    
-    function handleNumber(){
-      timer += incremento
-      num.innerHTML = timer
-      if(timer >= numbers){
-        num.innerHTML = numbers
-        clearInterval(numbersInterval)
-      }
-    }
-  })
 
-  

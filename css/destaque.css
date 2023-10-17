@@ -7,13 +7,13 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   place-items: start;
-  font-size:1.5rem;
+  font-size:1.8rem;
   color:#ffffff;
   gap: 50px;
   margin-top:60px;
 }
 
-@media screen and (max-width:500px){
+@media screen and (max-width:620px){
   .numeros{
     grid-template-columns: 1fr;
   }
