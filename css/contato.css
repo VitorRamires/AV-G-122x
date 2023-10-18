@@ -14,14 +14,12 @@
 
 .mapa{
   position: relative;
+  z-index: 222;
 }
 
-.mapa img{
-  border-radius: 20px 0 20px 0;
-}
 
 .info-adicional{
-  background-color: #002933;
+  background-color: #0082A4;
   color: #ffffff;
   display: flex;
   flex-direction: column;
@@ -50,10 +48,10 @@
 .info-adicional li::before{
   content: "";
   position: relative;
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
   border-radius: 5px;
-  background-color: #0193B9;
+  background-color: #ffffff;
 }
 
 .contato, .lojas{
@@ -77,9 +75,6 @@
   border-radius: 20px 0 20px 0;
   text-align: center;
 }
-
-
-
 
 
 

@@ -31,14 +31,18 @@
   background-color: #b8b8b8;
 }
 
-.active-texto, .active-beneficios{
-  display: block !important;
-  animation: anima-LeftToRight 0.3s ease-in-out;
+.tab:hover{
+  transform: scale(1.05);
 }
 
 .anime-height{
-    height: 100% !important;
-    transition: 0.5s;
+  height: 100% !important;
+  transition: 0.5s;
+}
+
+.active-texto, .active-beneficios{
+  display: block !important;
+  animation: anima-LeftToRight 0.3s ease-in-out;
 }
 
 .active-accordion{
@@ -46,23 +50,38 @@
   animation: anima-TopToBottom 0.3s ease-in-out;
 }
 
-
-.tab:hover{
-  transform: scale(1.05);
+.banner-decoration.anime-element.active{
+  animation: anima-width 0.3s ease-in-out;
+}
+.dec-right.anime-decoration.active{
+  animation: anima-rightToLeft 0.3s ease-in-out;
+}
+.anime-element.active.anim-right-dec{
+  animation: anima-bottomToTop 0.3s ease-in-out;
+}
+.anime-element.active.anim-left-dec{
+  animation:  anima-topToBottom 0.3s ease-in-out;
+}
+.FAQ.anime-element.active .FAQ-decoration.anima-faq{
+  animation:  anima-width 0.3s ease-in-out;
 }
 
-.scrollAnime{
+.anime-element{
   opacity: 0;
+  transform: translate3d(-30px, 0, 0);
+  transition: 0.3s;
 }
 
-.scrollAnime.scrollOn{
+.anime-element.active{
   opacity: 1;
-  animation: anima-LeftToRight 0.3s ease-out;
+  transform: translate3d(0, 0, 0);
+  transition: 0.3s;
 }
+
 
 @keyframes anima-car{
   from{
-    transform: translate(20%, -10%);
+    transform: translate(10%, -5%);
     opacity: 0;
   }
   to{
@@ -70,8 +89,7 @@
     opacity: 1;
   }
 }
-
-@keyframes anima-LeftToRight{
+@keyframes anima-leftToRight{
   from{
     opacity: 0;
     transform: translateX(-5%);
@@ -82,11 +100,22 @@
     transform: translateX(0);
   }
 }
-@keyframes anima-TopToBottom{
+@keyframes anima-rightToLeft{
+  from{
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+
+  to{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes anima-topToBottom{
   from{
     opacity: 0;
     display: none;
-    transform: translateY(-5%);
+    transform: translateY(-35%);
   }
 
   to{
@@ -95,14 +124,11 @@
     transform: translateY(0);
   }
 }
-
-
-
-@keyframes anima-TopToBottom{
+@keyframes anima-bottomToTop{
   from{
     opacity: 0;
     display: none;
-    transform: translateY(-5%);
+    transform: translateY(55%);
   }
 
   to{
@@ -111,5 +137,22 @@
     transform: translateY(0);
   }
 }
+@keyframes anima-width{
+  from{
+    opacity: 0;
+    width: 0;
+  }
+
+  to{
+    opacity: 1;
+    width: 100%;
+  }
+}
+
+
+
+
+
+
 
 
