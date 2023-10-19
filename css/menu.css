@@ -6,8 +6,27 @@
   z-index: 9998;
   background-color: #2b2b2b;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
+.comprar{
+  width: 140px;
+  max-width: 100%;
+  background-color: #EDA815;
+  text-align: center;
+  padding:10px;
+  font-family: "inter-light";
+  cursor: pointer;
+  transition: 0.3s;
+  font-size:0.8rem;
+}
+
+.comprar:hover{
+  background-color: #ffc23f;
+  transition: 0.3s;
+}
 
 .menu nav{
   width: 100%;
@@ -18,8 +37,9 @@
   display: flex;
   list-style-type: none;
   align-items: center;
-  justify-content: space-evenly;
-  gap: 70px;
+  justify-content: start;
+  gap: 90px;
+  margin-left:20px;
 }
 
 .menu a{
@@ -42,15 +62,16 @@
   }
 }
 
-@media screen and (max-width:730px) {
+@media screen and (max-width:1090px) {
   .menu{
     position: fixed;
-    top:5%;
+    top:3.5%;
     left:0;
     background-color: rgb(31, 31, 31);
-    width: 250px;
+    width: 210px;
     border-bottom:5px solid #A81F1F;
     display: none;
+    padding: 30px 15px 30px 15px;
   }
   .menu nav ul{
     display: flex;
@@ -63,8 +84,8 @@
 
   .menu-mobile-icon{
     position: fixed;
-    top:1%;
-    left:1%;
+    top:0;
+    left:0;
     width: 40px;
     height: 40px;
     z-index: 9999;
@@ -75,7 +96,6 @@
     justify-content: space-evenly;
     background-color: #A81F1F;
     border: 1px solid #ffffff;
-    border-radius: 50%;
     padding:5px;
   }
 

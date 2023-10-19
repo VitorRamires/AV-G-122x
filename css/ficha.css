@@ -57,16 +57,20 @@
   border-radius: 0px 20px 0px 20px;
 }
 
-
-.dec-right{
-  right:-2%;
-  bottom:0%;
+.veja-mais{
+  background-color: #EDA815;
+  width: 230px;
+  max-width: 100%;
+  padding: 15px;
+  color: #2e2e2e;
+  font-family: "inter-light";
 }
 
-.dec-left{
-  left:-2%;
-  bottom:0%;
+.veja-mais:hover{
+  cursor: pointer;
+  background-color: #ffc23f;
 }
+
 
 
 @media screen and (max-width:650px) {
@@ -74,7 +78,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border-bottom: 20px solid #a10000;
   }
   .espec-body{
     width: 100%;

@@ -21,14 +21,12 @@
 }
 
 
-
-
 .banner-text{
   position: relative;
-  margin:0 auto;
+  margin:40px auto 0 auto;
   color:#ffffff;
-  padding:90px 90px 160px 90px;
-  background-color: #272727;
+  padding:90px 0px 70px 0px;
+  border-bottom:  1px solid #ffffff;
 }
 
 .banner-text h2{
@@ -62,7 +60,7 @@
 
 .tab{
   position: relative;
-  height: 20px;
+  height: 15px;
   border-radius: 20px 0 20px 0;
   cursor: pointer;
 }
