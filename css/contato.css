@@ -1,7 +1,7 @@
 
 
 .localização-contato{
-  margin-top:230px;
+  margin-top:200px;
   font-family: "inter-light";
 }
 
@@ -19,7 +19,7 @@
 
 
 .info-adicional{
-  background-color: #0190B8;;
+  background-color: #b10000;
   color: #ffffff;
   display: flex;
   flex-direction: column;
@@ -71,7 +71,7 @@
   padding: 15px;
   z-index: 100;
   color: #ffffff;
-  border-bottom: 7px solid #00CAFF;
+  border-bottom: 7px solid #b10000;
   border-radius: 20px 0 20px 0;
   text-align: center;
 }

@@ -3,37 +3,32 @@
   top:0;
   left:0;
   width: 100%;
+  background-color: #a10000;
+  box-shadow: 0 400px 0 0 #a10000;
 }
 
 .banner-img{
   position: relative;
   height: 950px;
-  width: 1000px;
+  width: 100%;
   max-width: 100%;
   margin:0 auto;
   z-index: 600;
-  background-image: url(/img/modelo1.png);
-  background-position: center;
+  background-image: url(/img/carro.jpg);
+  background-position: 40% 50%;
   background-size: cover;
+  z-index: 786;
 }
 
 
-.banner-decoration{
-  position: absolute;
-  bottom:0;
-  transform: translateY(50%) !important;
-  width: 100%;
-  height: 150px;
-  background-color: #0193B9;
-}
+
 
 .banner-text{
   position: relative;
   margin:0 auto;
-  color:#00b4e6;
+  color:#ffffff;
   padding:90px 90px 160px 90px;
-  background-color: #1b1b1b;
-  border-radius:0 20px 0 20px;
+  background-color: #272727;
 }
 
 .banner-text h2{
@@ -46,7 +41,7 @@
   font-size: 1.2rem;
   line-height: 1.9rem;
   font-family: "inter-light";
-  color:#aaaaaa;
+  color:#e4e4e4;
 }
 
 .texto{
@@ -58,7 +53,7 @@
   bottom:0;
   width: 100%;
   left:50%;
-  transform: translate(-50%, 25%);
+  transform: translate(-50%, 35%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -87,7 +82,6 @@
   }
   .banner-text {
     padding: 90px 30px 160px 30px;
-    margin-top:30px;
   }
   .banner-text h2{
     font-size: 1.6rem;

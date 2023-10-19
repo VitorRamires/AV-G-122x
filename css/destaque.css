@@ -8,9 +8,9 @@
   grid-template-columns: 1fr 1fr;
   place-items: start;
   font-size:1.8rem;
-  color:#ffffff;
+  color:#525252;
   gap: 50px;
-  margin-top:60px;
+  margin-top:30px;
 }
 
 @media screen and (max-width:620px){

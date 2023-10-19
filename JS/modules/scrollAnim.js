@@ -8,8 +8,6 @@ export default function scrollAnime(){
       const topDistance = elements.getBoundingClientRect().top
       if(topDistance < windowHeight){
         elements.classList.add('active')
-      }else if(topDistance >= windowHeight) {
-        elements.classList.remove('active')
       }
     })
   }

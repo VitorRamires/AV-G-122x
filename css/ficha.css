@@ -1,7 +1,11 @@
 
 .especs{
   position: relative;
-  margin:250px auto 250px auto;
+  margin:150px auto 150px auto;
+}
+
+.especs .section-title h2{
+  color: rgb(255, 255, 255);
 }
 
 .especs-box{
@@ -49,19 +53,19 @@
   position: absolute;
   width: 80px;
   height: 200px;
-  background-color: #0193B9;
+  background-color: #da0000;
   border-radius: 0px 20px 0px 20px;
 }
 
 
 .dec-right{
   right:-2%;
-  top:20%;
+  bottom:0%;
 }
 
 .dec-left{
   left:-2%;
-  bottom:-7%;
+  bottom:0%;
 }
 
 
@@ -70,7 +74,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border-bottom: 20px solid #0193B9;;
+    border-bottom: 20px solid #a10000;
   }
   .espec-body{
     width: 100%;
