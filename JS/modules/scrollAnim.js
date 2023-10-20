@@ -13,7 +13,7 @@ export default function scrollAnime(){
   }
 
   scrollAnimeHandle()
-
+  
   window.addEventListener('scroll', scrollAnimeHandle)
 
 }

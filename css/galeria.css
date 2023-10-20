@@ -1,0 +1,26 @@
+.galeria{
+  margin-top:160px;
+}
+
+.galeria-box{
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr;
+  grid-template-rows:0.5fr 1fr 0.5fr;
+  width: 100%;
+  gap: 15px;
+  margin-top:50px;
+}
+
+
+.foto img{
+  width: 100%;
+}
+
+.foto:nth-child(3){
+  grid-row: 2;
+  grid-column: -1 / 1;
+}
+
+.foto:nth-child(4){
+  grid-row: 3;
+}

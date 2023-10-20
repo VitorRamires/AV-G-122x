@@ -1,8 +1,8 @@
-export default function mobile(){
-
+export default function menu(){
   const mobileMenuIcon = document.querySelector(".menu-mobile-icon")
   const menu = document.querySelector(".menu")
-  const barsMenu = document.querySelectorAll('.bar')
+  
+  
 
   function handleMenuMobile(){
     if(!menu.classList.contains('menuOn')){
@@ -14,5 +14,13 @@ export default function mobile(){
     }
   }
 
+  window.addEventListener('scroll', ()=>{
+    const pageScroll = window.scrollY
+    if(pageScroll > 0){
+      menu.style.padding = 15 + "px"
+    } else {
+      menu.style.padding = 30 + "px"
+    }
+  })
   mobileMenuIcon.addEventListener('click', handleMenuMobile)
 }

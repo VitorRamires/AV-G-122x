@@ -1,5 +1,5 @@
 .menu{
-  position: absolute;
+  position: fixed;
   top:0;
   left:0;
   padding:30px;
@@ -10,6 +10,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  transition: 0.3s;
 }
 
 .comprar{
