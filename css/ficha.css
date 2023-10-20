@@ -58,17 +58,22 @@
 }
 
 .veja-mais{
+  position: relative;
   background-color: #EDA815;
   width: 230px;
   max-width: 100%;
   padding: 15px;
   color: #2e2e2e;
   font-family: "inter-light";
+  transition: 0.3s;
+  cursor: pointer;
 }
 
+
 .veja-mais:hover{
-  cursor: pointer;
   background-color: #ffc23f;
+  width:250px;
+  transition: 0.3s;
 }
 
 
