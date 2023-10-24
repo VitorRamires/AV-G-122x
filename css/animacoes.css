@@ -54,7 +54,7 @@
 .active-accordion{
   display: block !important;
   opacity: 1;
-  animation: anima-t'opToBottom 0.3s ease-in-out;
+  animation: anima-topToBottom 0.3s ease-in-out;
 }
 
 .anime-element.active.espec-left{

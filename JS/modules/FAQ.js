@@ -5,8 +5,14 @@ export default function accordionList(){
   const faqDecoration = document.querySelectorAll(".FAQ-decoration")
 
   function handleAccordionList(index){
-      respostas[index].classList.toggle('active-accordion')
-      faqDecoration[index].classList.toggle('anime-height')
+      if(!respostas[index].classList.contains('active-accordion')){
+        respostas[index].classList.add('active-accordion')
+        faqDecoration[index].classList.add('anime-height')
+      } else {
+        respostas[index].classList.remove('active-accordion')
+        faqDecoration[index].classList.remove('anime-height')
+      }
+      
   }
 
   questions.forEach((question, index) => {
