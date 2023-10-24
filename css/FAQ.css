@@ -52,5 +52,8 @@
   font-size:1rem;
   color:#dfdfdf;
   line-height: 1.3rem;
+}
+
+.resposta p{
   display: none;
 }
