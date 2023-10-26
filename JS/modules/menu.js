@@ -4,21 +4,19 @@ export default function menu(){
   const mobileMenuIcon = document.querySelector('.menu-mobile-icon')
   
   
-
   function handleMenuMobile(){
-    if(!menu.classList.contains('menuOn')){
-      menu.classList.add('menuOn')
+    const menuActive = menu.classList.toggle('menuOn')
+    if(menuActive){
       bars.forEach(bar=>{
         bar.classList.add('close')
       })
- 
-    } else if (menu.classList.contains('menuOn')) {
-      menu.classList.remove('menuOn')
+    } else if (!menuActive){
       bars.forEach(bar=>{
         bar.classList.remove('close')
       })
     }
   }
+  
 
   window.addEventListener('scroll', ()=>{
     const pageScroll = window.scrollY

@@ -16,13 +16,9 @@
 }
 
 .menuOn{
-  display: flex !important;
-  flex-direction: column;
-  align-items: center !important; 
-  justify-content: start !important;
-  gap: 30px;
-  animation: menuMobile 0.3s ease-in-out;
   transition: 0.3s;
+  transform: translateX(0%) !important;
+  opacity: 1 !important;
 }
 
 .active-tab{
@@ -84,17 +80,7 @@
 
 
 
-@keyframes menuMobile{
-  from{
-    opacity: 0;
-    transform: translateX(-100%);
-  }
 
-  to{
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
 @keyframes anima-leftToRight{
   from{
     opacity: 0;

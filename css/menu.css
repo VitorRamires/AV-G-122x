@@ -85,14 +85,20 @@
 @media screen and (max-width:1090px) {
   .menu{
     position: fixed;
+    display: flex;
+    width: 210px;
     top:3.5%;
     left:0;
-    background-color: rgb(31, 31, 31);
-    width: 210px;
-    border-bottom:5px solid #A81F1F;
-    display: none;
+    gap: 30px;
     flex-direction: column;
-    padding: 30px 15px 30px 15px;
+    align-items: center; 
+    justify-content: start;
+    background-color: rgb(31, 31, 31);
+    border-bottom:5px solid #A81F1F;
+    padding: 30px 15px 30px 0;
+    transition: 0.3s;
+    opacity: 0;
+    transform: translateX(-100%);
   }
   .menu nav ul{
     display: flex;
@@ -102,6 +108,13 @@
     gap: 30px;
   }
 
+  .menu nav{
+    margin:0 45px 0 0;
+  }
+
+  .comprar{
+    margin-right:15px;
+  }
 
   .menu-mobile-icon{
     position: fixed;
