@@ -16,15 +16,5 @@ export default function menu(){
       })
     }
   }
-  
-
-  window.addEventListener('scroll', ()=>{
-    const pageScroll = window.scrollY
-    if(pageScroll > 0){
-      menu.style.padding = 15 + "px"
-    } else {
-      menu.style.padding = 30 + "px"
-    }
-  })
   mobileMenuIcon.addEventListener('click', handleMenuMobile)
 }

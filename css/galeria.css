@@ -11,6 +11,15 @@
   margin-top:50px;
 }
 
+.foto{
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.foto:hover{
+  transform: scale(1.02);
+  transition: 0.2s;
+}
 
 .foto img{
   width: 100%;
@@ -23,4 +32,45 @@
 
 .foto:nth-child(4){
   grid-row: 3;
+}
+
+.fullscreen-mode{
+  position: fixed;
+  top:0;
+  left:0;
+  background-color: rgba(0, 0, 0, 0.897);
+  z-index: 1000;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.fullscreen-foto{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -45%);
+  width: 1600px;
+  height: 750px;
+  max-width: 100%;
+  background-image: url("/img/carro.jpg");
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border:5px solid #EDA815;
+}
+
+.closeBtn{
+  position: absolute;
+  top:-15px;
+  right:-10px;
+  width: 40px;
+  height: 40px;
+  background-color: #c20000;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.closeBtn:hover{
+  transform: scale(1.05);
+  transition: 0.2s;
 }
