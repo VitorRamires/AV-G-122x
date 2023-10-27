@@ -4,7 +4,7 @@ export default function tooltipMapHandler(){
 
   function handleTooltipHover(){
     textoCriado.classList.add('textoMapa')
-    textoCriado.innerText = 'Número 207, ao lado do hospital'
+    textoCriado.innerText = 'Cursor'
     mapa.appendChild(textoCriado)
   }
 
@@ -13,8 +13,8 @@ export default function tooltipMapHandler(){
   }
 
   function handleTooltipMove(event){
-    textoCriado.style.top = event.offsetY + 20 + 'px'
-    textoCriado.style.left = event.offsetX + 20 + 'px'
+    textoCriado.style.top = event.offsetY + 10 + 'px'
+    textoCriado.style.left = event.offsetX + 10 + 'px'
   }
 
   mapa.addEventListener('mousemove', handleTooltipMove)
