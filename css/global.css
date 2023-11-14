@@ -18,23 +18,28 @@ img{
 @font-face {
   font-family: "nico";
   src: url(/font/NicoMoji-Regular.ttf);
+  font-display: swap;
 }
 
 @font-face {
   font-family: "inter-light";
   src: url(/font/Inter-Light.ttf);
+  font-display: swap;
 }
 @font-face {
   font-family: "inter-Medium";
   src: url(/font/Inter-Medium.ttf);
+  font-display: swap;
 }
 @font-face {
   font-family: "inter-regular";
   src: url(/font/Inter-Regular.ttf);
+  font-display: swap;
 }
 @font-face {
   font-family: "inter-black";
   src: url(/font/Inter-Black.ttf);
+  font-display: swap;
 }
 
 .center{

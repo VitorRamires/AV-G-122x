@@ -1,9 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./css/style.css" rel="stylesheet">  
+  <meta name="description" content="Site que apresenta todas as informações sobre o mais novo carro, AV-G 122x">
+  <link href="./css/style.css" rel="stylesheet">
+  <link rel="preload" as="image" href="/img/carro.jpg">  
+  <link rel="preload" as="image" href="/img/foto1.jpg">  
+  <link rel="preload" as="image" href="/img/foto3.jpg">  
+  <link rel="preload" as="image" href="/img/foto4.jpg">  
+  <link rel="preload" href="/font/NicoMoji-Regular.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="/font/Inter-Light.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="/font/Inter-Regular.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="/font/Inter-Medium.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="/font/Inter-Black.ttf" as="font" type="font/ttf" crossorigin>
   <title>Projeto 04</title>
 </head>
 <body>
@@ -118,7 +128,7 @@
   <div class="fullscreen-mode">
     <div class="fullscreen-foto">
       <div class="closeBtn">
-        <img src="./img/x.svg">
+        <img src="./img/x.svg" alt="close-button">
       </div>
     </div>
   </div>
@@ -127,19 +137,32 @@
   </div>
   <div class="galeria-box">
     <div class="foto">
-      <img src="./img/carro.jpg" class="anime-element anime-foto">
+      <picture>
+
+        <img src="./img/carro.jpg" class="anime-element anime-foto" alt="foto-01">
+      </picture>
     </div>
     <div class="foto">
-      <img src="./img/foto1.jpg" class="anime-element anime-foto">
+      <picture>
+        <img src="./img/foto1.jpg" class="anime-element anime-foto" alt="foto-02">
+      </picture>
     </div>
     <div class="foto">
-      <img src="./img/foto2.jpg" class="anime-element anime-foto">
+      <picture>
+
+        <img src="./img/foto2.jpg" class="anime-element anime-foto" alt="foto-03">
+      </picture>
     </div>
     <div class="foto">
-      <img src="./img/foto3.jpg" class="anime-element anime-foto">
+      <picture>
+
+        <img src="./img/foto3.jpg" class="anime-element anime-foto" alt="foto-04">
+      </picture>
     </div>
     <div class="foto">
-      <img src="./img/foto4.jpg" class="anime-element anime-foto">
+      <picture>
+        <img src="./img/foto4.jpg" class="anime-element anime-foto" alt="foto-05">
+      </picture>
     </div>
   </div>
 </section>
