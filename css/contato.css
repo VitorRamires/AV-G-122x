@@ -7,7 +7,7 @@
 
 .localização-contato-body{
   display: grid;
-  grid-template-columns: 1fr 0.55fr;
+  grid-template-columns: 0.55fr 1fr;
   align-items: center;
   margin-top: 80px;
 }
