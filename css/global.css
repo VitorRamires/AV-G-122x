@@ -15,6 +15,10 @@ img{
   object-fit: cover;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 @font-face {
   font-family: "nico";
   src: url(/font/NicoMoji-Regular.ttf);
