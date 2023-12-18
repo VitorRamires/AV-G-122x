@@ -7,7 +7,7 @@
   <link href="./css/style.css" rel="stylesheet">
   <link rel="preload" as="image" href="/img/carro.jpg">  
   <link rel="preload" as="image" href="/img/foto1.jpg">  
-  <link rel="preload" as="image" href="/img/foto3.jpg">  
+  <link rel="preload" as="image" href="/img/foto3.jpeg">  
   <link rel="preload" as="image" href="/img/foto4.jpg">  
   <link rel="preload" href="/font/NicoMoji-Regular.ttf" as="font" type="font/ttf" crossorigin>
   <link rel="preload" href="/font/Inter-Light.ttf" as="font" type="font/ttf" crossorigin>
@@ -28,19 +28,19 @@
     <nav>
       <ul>
         <li>
-          <a id="banner">AV-G 122X</a>
+          <a href="#apresentation">AV-G 122X</a>
         </li>
         <li>
-          <a id="especs">Especificações</a>
+          <a href="#especs">Especificações</a>
         </li>
         <li>
-          <a id="destaque">Extras</a>
+          <a href="#destaques">Extras</a>
         </li>
         <li>
-          <a id="localização-contato">Onde comprar</a>
+          <a href="#localização">Onde comprar</a>
         </li>
         <li>
-          <a id="FAQ">FAQ</a>
+          <a href="#FAQ">FAQ</a>
         </li>
       </ul>
     </nav>
@@ -50,9 +50,35 @@
   </div>
 </section>
 
-<section class="apresentation">
+<section class="apresentation" id="apresentation">
   <div class="banner">
     <div class="banner-img">
+      <div class="slider-painel">
+        <div class="carousel">
+          <div class="carousel-imgs">
+            <div class="slide">
+              <img src="./img/slide2.jpg" alt="foto1">
+            </div>
+            <div class="slide">
+              <img src="./img/slide3.jpeg" alt="foto1">
+            </div>
+            <div class="slide">
+              <img src="./img/foto2.jpg" alt="foto1">
+            </div>
+            <div class="slide">
+              <img src="./img/slide4.jpg" alt="foto1">
+            </div>
+          </div>
+          <div class="buttons">
+            <div class="previous">
+              <img src="/img/arrow-right-short.svg" alt="">
+            </div>
+            <div class="next">
+              <img src="/img/arrow-right-short.svg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="navTab">
         <div class="tab active-tab"></div>
         <div class="tab desactive-tab""></div>
@@ -68,7 +94,7 @@
   </div>
 </section>
 
-<section class="especs center">
+<section class="especs center" id="especs">
   <div class="espec-decoration-box"></div>
   <div class="section-title anime-element">
     <h2>Ficha Tecnica</h2>
@@ -97,7 +123,7 @@
 </section>
 
 
-<section class="destaque center anime-element">
+<section class="destaque center anime-element" id="destaques">
   <div class="section-title">
     <h2>MAIS DE...</h2>
   </div>
@@ -123,8 +149,7 @@
   </article>
 </section>
 
-<section class="galeria center">
-
+<section class="galeria center" id="galeria">
   <div class="fullscreen-mode">
     <div class="fullscreen-foto">
       <div class="closeBtn">
@@ -138,7 +163,7 @@
   <div class="galeria-box">
     <div class="foto">
       <picture>
-        <img src="./img/carro.jpg" class="anime-element anime-foto" alt="foto-01">
+        <img src="./img/slide2.jpg" class="anime-element anime-foto" alt="foto-01">
       </picture>
     </div>
     <div class="foto">
@@ -166,7 +191,7 @@
   </div>
 </section>
 
-<section class="localização-contato center">
+<section class="localização-contato center" id="localização">
   <div class="section-title anime-element">
     <h2>Contato</h2>
   </div>
@@ -200,7 +225,7 @@
   </div>
 </section>
 
-<section class="FAQ anime-element">
+<section class="FAQ anime-element" id="FAQ">
   <div class="section-title center">
     <h2>FAQ</h2>
   </div>

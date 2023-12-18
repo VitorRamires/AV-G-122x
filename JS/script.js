@@ -1,4 +1,5 @@
 import scrollAnime from "./modules/scrollAnim.js"
+import carouselHandle from "./modules/carousel.js"
 import navTab from "./modules/tabs.js"
 import accordionList from './modules/FAQ.js'
 import animNumbers from "./modules/animNumbers.js"
@@ -13,7 +14,7 @@ navTab()
 menu()
 fullScreenMode()
 mapHandle()
-
+carouselHandle()
 
 
 
