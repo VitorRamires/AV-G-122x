@@ -14,7 +14,6 @@
   max-width: 100%;
   margin:0 auto;
   z-index: 600;
-  background-image: url(/img/carro.jpg);
   background-position: 40% 75%;
   background-size: cover;
   z-index: 786;
@@ -100,7 +99,7 @@
 
 .banner-text h2{
   font-size: 2.5rem;
-  margin-bottom:65px;
+  margin-bottom:45px;
   font-family: "nico";
 }
 
@@ -129,8 +128,8 @@
 
 .tab{
   position: relative;
-  height: 15px;
-  border-radius: 20px 0 20px 0;
+  height: 25px;
+  border-radius: 5px 0 5px 0;
   cursor: pointer;
 }
 
