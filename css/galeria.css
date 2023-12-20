@@ -68,3 +68,10 @@
   cursor: pointer;
   transition: 0.2s;
 }
+
+
+@media screen and (max-width:440px) {
+  .galeria-box{
+    display: block;
+  }
+}
