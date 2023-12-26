@@ -27,19 +27,19 @@ export default function carouselHandle(){
     counterSlider--
     carousel()
   }
-  let intervalo = setInterval(proximo, 10000)
+  let intervalo = setInterval(proximo, 7000)
   
 
 
   next.addEventListener('click', ()=>{
     clearInterval(intervalo)
     proximo()
-    intervalo = setInterval(proximo, 10000)
+    intervalo = setInterval(proximo, 7000)
   })
   previous.addEventListener('click', ()=>{
     clearInterval(intervalo)
     anterior()
-    intervalo = setInterval(proximo, 10000)
+    intervalo = setInterval(proximo, 7000)
   })
 }
 
